@@ -1,11 +1,11 @@
-# Boilerplate MVC em Node.js com PostgreSQL
+# Tasky
 
-Este projeto é um boilerplate básico para uma aplicação Node.js seguindo o padrão MVC (Model-View-Controller), utilizando PostgreSQL como banco de dados.
+Este projeto é uma aplicação Node.js seguindo o padrão MVC (Model-View-Controller), utilizando PostgreSQL como banco de dados.
 
 ## Requisitos
 
-- Node.js (versão X.X.X)
-- PostgreSQL (versão X.X.X)
+- Node.js (versão 22.15.0)
+- PostgreSQL (versão 17.0.0)
 
 ## Instalação
 
