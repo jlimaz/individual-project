@@ -1,6 +1,6 @@
 # Web Application Document - Projeto Individual - Módulo 2 - Inteli
 
-## TaskFlow: Sistema Inteligente de Gerenciamento de Tarefas
+![Persona Carolina](/assets/tasky-banner.png)
 
 #### Autor do projeto: José Antônio Ferreira de Lima
 
@@ -12,15 +12,15 @@
 4. [Desenvolvimento da Aplicação Web](#c4)  
 5. [Referências](#c5)  
 
-<br>
+---
 
 ## <a name="c1"></a>1. Introdução
 
-O TaskFlow é um sistema web de gerenciamento de tarefas projetado para profissionais que lidam com múltiplos projetos simultaneamente e precisam de uma ferramenta abrangente para organizar seu fluxo de trabalho. Diferentemente de outras soluções disponíveis no mercado, o TaskFlow oferece uma abordagem integrada que combina gerenciamento de tarefas com análise de produtividade e planejamento estratégico.
+O Tasky é um sistema web de gerenciamento de tarefas projetado para profissionais que lidam com múltiplos projetos simultaneamente e precisam de uma ferramenta abrangente para organizar seu fluxo de trabalho. Diferentemente de outras soluções disponíveis no mercado, o Tasky oferece uma abordagem integrada que combina gerenciamento de tarefas com análise de produtividade e planejamento estratégico.
 
-O sistema permite aos usuários criar, classificar e priorizar tarefas usando um sistema intuitivo de categorização. Os usuários podem dividir projetos complexos em subtarefas gerenciáveis, definir prazos realistas e monitorar o progresso através de painéis visuais personalizáveis. Uma funcionalidade diferencial do TaskFlow é a capacidade de integração com outras ferramentas essenciais de trabalho, como calendários, e-mails e plataformas de comunicação, eliminando a necessidade de alternar entre múltiplos aplicativos.
+O sistema permite aos usuários criar, classificar e priorizar tarefas usando um sistema intuitivo de categorização. Os usuários podem dividir projetos complexos em subtarefas gerenciáveis, definir prazos realistas e monitorar o progresso através de painéis visuais personalizáveis. Uma funcionalidade diferencial do Tasky é a capacidade de integração com outras ferramentas essenciais de trabalho, como calendários, e-mails e plataformas de comunicação, eliminando a necessidade de alternar entre múltiplos aplicativos.
 
-Além disso, o sistema oferece análises detalhadas de produtividade, identificando padrões de trabalho e sugerindo otimizações para aumentar a eficiência. O TaskFlow foi concebido para ser altamente personalizável, permitindo que cada usuário adapte a interface e funcionalidades às suas necessidades específicas de organização e detalhamento.
+Além disso, o sistema oferece análises detalhadas de produtividade, identificando padrões de trabalho e sugerindo otimizações para aumentar a eficiência. O Tasky foi concebido para ser altamente personalizável, permitindo que cada usuário adapte a interface e funcionalidades às suas necessidades específicas de organização e detalhamento.
 
 ---
 
@@ -28,34 +28,33 @@ Além disso, o sistema oferece análises detalhadas de produtividade, identifica
 
 ### 2.1. Personas
 
-![Persona Carolina Menezes](assets/persona-carolina.png)
+<div align="center">
+<sub>FIGURA 1 - Persona (Carolina) </sub>
+</div>
+<div>
 
-**Carolina Menezes**
-* **Idade:** 28 anos
-* **Ocupação:** Analista de Projetos
-* **Sobre:** Carolina é uma profissional organizada, meticulosa e altamente motivada por resultados. Trabalha com prazos apertados, lida com múltiplos projetos simultaneamente e gerencia pequenas equipes. Gosta de manter tudo sob controle e acredita que a organização pessoal é a chave para sua produtividade. Já testou diversos aplicativos de tarefas, mas ainda não encontrou um que realmente acompanhe seu ritmo e necessidade de detalhamento.
+![Persona Carolina](/assets/persona-carolina.png)
 
-**Frustrações:**
-* Criar uma tarefa e não conseguir classificá-la do jeito que precisa
-* Ter que usar múltiplos apps para controlar tarefas pessoais e profissionais
-* Falta de integração com outras ferramentas essenciais que ela já usa
+<div align="center">
+</div>
+<div align="center">
 
-**Metas:**
-* Aumentar sua produtividade e reduzir o estresse causado por tarefas mal organizadas
-* Sentir-se no controle da sua rotina e planejamento
-* Ser mais eficiente no trabalho e liberar tempo para suas atividades
-* Atingir metas de curto e longo prazo com clareza e consistência
 
-**Como o TaskFlow ajuda Carolina:**
-O TaskFlow oferece a Carolina um sistema centralizado onde ela pode gerenciar todos os seus projetos e tarefas com o nível de detalhamento que ela necessita. A plataforma permite categorização avançada, integração com outras ferramentas que ela já utiliza e oferece relatórios de produtividade que ajudam Carolina a otimizar seu tempo e esforço. Com o TaskFlow, ela pode manter o controle completo sobre sua agenda profissional e pessoal sem precisar alternar entre diferentes aplicativos.
+<sub>FONTE: Produzido pelo autor, 2025</sub>
+</div>
+
+**Como o Tasky ajuda Carolina:**
+
+O Tasky oferece a Carolina um sistema centralizado onde ela pode gerenciar todos os seus projetos e tarefas com o nível de detalhamento que ela necessita. A plataforma permite categorização avançada, integração com outras ferramentas que ela já utiliza e oferece relatórios de produtividade que ajudam Carolina a otimizar seu tempo e esforço. Com o Tasky, ela pode manter o controle completo sobre sua agenda profissional e pessoal sem precisar alternar entre diferentes aplicativos.
+
+---
 
 ### 2.2. User Stories
 
-**US01 | Como analista de projetos, quero poder categorizar minhas tarefas em múltiplos níveis e dimensões (projeto, prazo, prioridade, área da vida), para que eu possa organizar meu trabalho de acordo com minha metodologia pessoal de produtividade.**
+- US01 | Como analista de projetos, quero poder categorizar minhas tarefas em   múltiplos níveis e dimensões (projeto, prazo, prioridade, área da vida), para que eu possa organizar meu trabalho de acordo com minha metodologia pessoal de produtividade
 
-**US02 | Como profissional que gerencia múltiplos projetos, quero visualizar minhas tarefas em diferentes formatos (lista, quadro Kanban, calendário, timeline), para que eu possa adaptar a visualização conforme minha necessidade do momento.**
-
-**US03 | Como usuária de múltiplas ferramentas digitais, quero integrar o sistema de tarefas com minhas outras plataformas de trabalho (email, calendário, Slack), para que eu possa centralizar informações sem perder atualizações importantes.**
+- US02 | Como profissional que gerencia múltiplos projetos, quero visualizar minhas tarefas em diferentes formatos (lista, quadro Kanban, calendário, timeline), para que eu possa adaptar a visualização conforme minha necessidade do momento.
+- US03 | Como usuária de múltiplas ferramentas digitais, quero integrar o sistema  de tarefas com minhas outras plataformas de trabalho (email, calendário, Slack), para que eu possa centralizar informações sem perder atualizações importantes.
 
 **Análise INVEST da US01:**
 
@@ -77,7 +76,108 @@ O TaskFlow oferece a Carolina um sistema centralizado onde ela pode gerenciar to
 
 ### 3.1. Modelagem do banco de dados  (Semana 3)
 
-*Conteúdo a ser preenchido na Semana 3*
+<div align="center">
+<sub>FIGURA 2 - Modelagem Database </sub>
+</div>
+<div>
+
+![Modelagem Database](/assets/model-db.png)
+
+<div align="center">
+</div>
+<div align="center">
+
+
+<sub>FONTE: Produzido pelo autor, 2025</sub>
+</div>
+
+#### 3.1.1. Visão Geral
+
+O modelo representa um sistema de **gerenciamento de tarefas**, permitindo o cadastro de usuários, atribuição de tarefas, categorização, controle de estados, além de anexos e comentários.
+
+#### 3.1.2 Tabelas e Atributos
+
+##### 1. **Users**
+Armazena informações dos usuários do sistema.
+
+- `id`: Identificador único do usuário (PK).
+- `name`: Nome do usuário.
+- `email`: E-mail do usuário (único e obrigatório).
+- `password_hash`: Senha criptografada.
+- `profile_photo`: URL da foto de perfil.
+- `created_at`: Data de criação do usuário.
+
+##### 2. **Tasks**
+Contém as tarefas do sistema.
+
+- `id`: Identificador único da tarefa (PK).
+- `title`: Título da tarefa.
+- `description`: Descrição detalhada.
+- `created_at`: Data de criação.
+- `due_date`: Data limite.
+- `priority`: Prioridade (ex: baixa, média, alta).
+- `category_id`: Chave estrangeira para a tabela `Categories`.
+- `state_id`: Chave estrangeira para a tabela `States`.
+- `supertask_id`: Auto-relacionamento para indicar subtarefas.
+
+##### 3. **Categories**
+Define categorias para agrupar tarefas.
+
+- `id`: Identificador único (PK).
+- `name`: Nome da categoria.
+
+##### 4. **States**
+Define os estados de uma tarefa (ex: "Pendente", "Concluída").
+
+- `id`: Identificador único (PK).
+- `name`: Nome do estado.
+
+##### 5. **UserTask**
+Tabela de associação entre usuários e tarefas (muitos-para-muitos).
+
+- `id`: Identificador único (PK).
+- `task_id`: Referência à tarefa.
+- `user_id`: Referência ao usuário.
+- `assigned_at`: Data de atribuição da tarefa ao usuário.
+
+##### 6. **Comments**
+Permite que os usuários comentem em tarefas.
+
+- `id`: Identificador único (PK).
+- `task_id`: Tarefa associada ao comentário.
+- `user_id`: Autor do comentário.
+- `message`: Conteúdo do comentário.
+- `created_at`: Data do comentário.
+
+##### 7. **Attachments**
+Anexos relacionados às tarefas.
+
+- `id`: Identificador único (PK).
+- `task_id`: Tarefa associada ao anexo.
+- `file_url`: URL do arquivo anexado.
+- `uploaded_at`: Data de envio.
+
+#### 3.1.3 Cardinalidade das Relações
+
+- **Users ↔ UserTask ↔ Tasks**: Relação muitos-para-muitos.  
+  Um usuário pode estar associado a várias tarefas e uma tarefa pode ter vários usuários atribuídos.
+
+- **Tasks ↔ Categories**: Relação muitos-para-um.  
+  Uma tarefa pertence a uma única categoria, mas uma categoria pode agrupar várias tarefas.
+
+- **Tasks ↔ States**: Relação muitos-para-um.  
+  Cada tarefa possui um único estado, mas um estado pode ser usado por várias tarefas.
+
+- **Tasks ↔ Comments** e **Users ↔ Comments**: Relação um-para-muitos.  
+  Uma tarefa pode ter vários comentários e um usuário pode comentar em várias tarefas.
+
+- **Tasks ↔ Attachments**: Relação um-para-muitos.  
+  Uma tarefa pode ter diversos arquivos anexados.
+
+- **Tasks ↔ Tasks (supertask_id)**: Auto-relacionamento um-para-muitos.  
+  Permite a criação de subtarefas ligadas a uma supertarefa.
+
+---
 
 ### 3.1.1 BD e Models (Semana 5)
 
