@@ -267,7 +267,20 @@ ALTER TABLE "Attachments" ADD FOREIGN KEY ("task_id") REFERENCES "Tasks" ("id");
 
 ### 3.3. Wireframes (Semana 03)
 
-*Conteúdo a ser preenchido na Semana 3*
+<div align="center">
+<sub>FIGURA 3 - Wireframe </sub>
+</div>
+<div>
+
+![Wireframe](/assets/wireframe.png)
+
+<div align="center">
+</div>
+<div align="center">
+
+
+<sub>FONTE: Produzido pelo autor, 2025</sub>
+</div>
 
 ### 3.4. Guia de estilos (Semana 05)
 
