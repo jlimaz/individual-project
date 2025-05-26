@@ -6,8 +6,6 @@ const category = require('../controllers/categoryController');
 const state = require('../controllers/stateController');
 const task = require('../controllers/taskController');
 const userTask = require('../controllers/userTaskController');
-const comment = require('../controllers/commentController');
-const attachment = require('../controllers/attachmentController');
 
 // Users
 router.post('/users', user.createUser);
@@ -37,15 +35,5 @@ router.delete('/tasks/:id', task.excluirTarefa);
 router.post('/usertasks', userTask.createUserTask);
 router.get('/usertasks', userTask.listUserTasks);
 router.delete('/usertasks/:id', userTask.deleteUserTask);
-
-// Comments
-router.post('/comments', comment.createComment);
-router.get('/comments', comment.listComments);
-router.delete('/comments/:id', comment.deleteComment);
-
-// Attachments
-router.post('/attachments', attachment.createAttachment);
-router.get('/attachments', attachment.listAttachments);
-router.delete('/attachments/:id', attachment.deleteAttachment);
 
 module.exports = router;

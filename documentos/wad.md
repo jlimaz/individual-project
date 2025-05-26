@@ -257,9 +257,44 @@ ALTER TABLE "Attachments" ADD FOREIGN KEY ("task_id") REFERENCES "Tasks" ("id");
 
 ---
 
-### 3.1.1 BD e Models (Semana 5)
+### 3.1.1 BD e Models
 
-*Conteúdo a ser preenchido na Semana 5*
+<div align="center">
+<sub>FIGURA 3 - Diagrama MVC </sub>
+</div>
+<div>
+
+![Modelagem Database](/assets/diagrama-mvc.png)
+
+<div align="center">
+</div>
+<div align="center">
+
+
+<sub>FONTE: Produzido pelo autor, 2025</sub>
+</div>
+
+Na Semana 5, foi realizada a modelagem e criação do banco de dados para o sistema, visando organizar e estruturar as informações necessárias de forma eficiente. O modelo relacional foi implementado utilizando as seguintes tabelas principais:
+
+Users: armazena os dados dos usuários, incluindo nome, e-mail (único), hash da senha, foto de perfil e data de criação.
+
+Categories: define as categorias das tarefas, permitindo uma classificação mais organizada.
+
+States: representa os estados das tarefas (como "em andamento", "concluída", etc.), permitindo o controle de progresso.
+
+Tasks: tabela central do sistema, que armazena as tarefas com informações como título, descrição, data de criação, data de vencimento, prioridade (podendo ser "Low", "Medium", "High" ou "Urgent"), além de permitir a categorização, o estado atual e a possibilidade de ser uma subtarefa (através de uma referência a outra tarefa).
+
+UserTask: representa a relação de atribuição entre usuários e tarefas, permitindo que uma mesma tarefa possa ser atribuída a diferentes usuários, com o registro da data de atribuição.
+
+Além disso, foram definidas as chaves estrangeiras para garantir a integridade referencial entre as tabelas:
+
+category_id e state_id na tabela Tasks referenciam, respectivamente, Categories e States.
+
+supertask_id na tabela Tasks possibilita a criação de hierarquia entre tarefas.
+
+user_id e task_id na tabela UserTask garantem a associação correta entre usuários e tarefas.
+
+Esse modelo permite gerenciar tarefas com múltiplos usuários, categorização, controle de estado e hierarquia de subtarefas, assegurando flexibilidade e robustez para futuras funcionalidades do sistema.
 
 ### 3.2. Arquitetura (Semana 5)
 
@@ -268,7 +303,7 @@ ALTER TABLE "Attachments" ADD FOREIGN KEY ("task_id") REFERENCES "Tasks" ("id");
 ### 3.3. Wireframes (Semana 03)
 
 <div align="center">
-<sub>FIGURA 3 - Wireframe </sub>
+<sub>FIGURA 4 - Wireframe </sub>
 </div>
 <div>
 
@@ -292,7 +327,34 @@ ALTER TABLE "Attachments" ADD FOREIGN KEY ("task_id") REFERENCES "Tasks" ("id");
 
 ### 3.6. WebAPI e endpoints (Semana 05)
 
-*Conteúdo a ser preenchido na Semana 5*
+#### Usuários (/users)
+- **POST /users** — Cria um novo usuário.
+- **GET /users** — Lista todos os usuários.
+- **PUT /users/:id** — Atualiza os dados de um usuário específico pelo ID.
+- **DELETE /users/:id** — Remove um usuário específico pelo ID.
+
+#### Categorias (/categories)
+- **POST /categories** — Cria uma nova categoria.
+- **GET /categories** — Lista todas as categorias cadastradas.
+- **PUT /categories/:id** — Atualiza uma categoria específica pelo ID.
+- **DELETE /categories/:id** — Exclui uma categoria específica pelo ID.
+
+#### Estados (/states)
+- **POST /states** — Cria um novo estado de tarefa.
+- **GET /states** — Lista todos os estados.
+- **PUT /states/:id** — Atualiza um estado específico pelo ID.
+- **DELETE /states/:id** — Remove um estado específico pelo ID.
+
+#### Tarefas (/tasks)
+- **POST /tasks** — Cria uma nova tarefa.
+- **GET /tasks** — Lista todas as tarefas cadastradas.
+- **PUT /tasks/:id** — Atualiza uma tarefa específica pelo ID.
+- **DELETE /tasks/:id** — Exclui uma tarefa específica pelo ID.
+
+#### UserTask (/usertasks)
+- **POST /usertasks** — Atribui uma tarefa a um usuário.
+- **GET /usertasks** — Lista todas as atribuições de tarefas a usuários.
+- **DELETE /usertasks/:id** — Remove uma atribuição específica pelo ID.
 
 ### 3.7 Interface e Navegação (Semana 07)
 
