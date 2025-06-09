@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Tasky - Criar Conta</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/login.css">
+</head>
+
+<body>
+  <div class="login-container">
+    <div class="login-left">
+      <div class="login-form">
+        <!-- Welcome Section -->
+        <div class="welcome-section">
+          <h2>Crie sua conta</h2>
+          <p style="text-align: left;">Preencha os dados para acessar a plataforma</p>
+        </div>
+
+        <!-- Error Message -->
+        <div id="errorMsg" class="error-message">
+          Erro: Não foi possível criar a conta
+        </div>
+
+        <!-- Create Account Form -->
+        <form action="/create-account" method="POST" autocomplete="off">
+          <div class="form-group">
+            <input type="text" name="name" id="name" required placeholder="Nome" class="input">
+          </div>
+          <div class="form-group">
+            <input type="email" name="email" id="email" required placeholder="Email" class="input">
+          </div>
+          <div class="form-group">
+            <input type="password" name="password" id="passwordField" required placeholder="Senha" class="input" autocomplete="off">
+          </div>
+          <button type="submit" class="button-primary">Criar Conta</button>
+        </form>
+
+        <!-- Google Signup Button -->
+        <button type="button" class="button-google">Criar conta com Google</button>
+
+        <!-- Login Link -->
+        <div class="signup-link">
+          Já possui uma conta? <a href="/login" id="loginLink">Entrar</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="login-right">
+      <!-- Background image or illustration would go here -->
+    </div>
+  </div>
+
+  <script>
+    // Verifica se há um erro na URL e exibe a mensagem de erro
+    window.onload = function () {
+      if (window.location.search.includes('error=1')) {
+        document.getElementById('errorMsg').style.display = 'block';
+        document.getElementById('passwordField').value = '';
+        window.history.replaceState({}, document.title, "/create-account");
+      }
+    };
+
+    // Mobile tab functionality (for demonstration)
+    document.querySelectorAll('.tab-button').forEach(button => {
+      button.addEventListener('click', function () {
+        document.querySelectorAll('.tab-button').forEach(btn => btn.classList.remove('active'));
+        this.classList.add('active');
+      });
+    });
+
+    // Login link functionality (placeholder)
+    document.getElementById('loginLink').addEventListener('click', function (e) {
+      // Navega para a página de login
+    });
+  </script>
+</body>
+
+</html>

@@ -48,9 +48,3 @@ ALTER TABLE "Tasks" ADD FOREIGN KEY ("supertask_id") REFERENCES "Tasks" ("id");
 ALTER TABLE "UserTask" ADD FOREIGN KEY ("task_id") REFERENCES "Tasks" ("id");
 
 ALTER TABLE "UserTask" ADD FOREIGN KEY ("user_id") REFERENCES "Users" ("id");
-
-ALTER TABLE "Comments" ADD FOREIGN KEY ("task_id") REFERENCES "Tasks" ("id");
-
-ALTER TABLE "Comments" ADD FOREIGN KEY ("user_id") REFERENCES "Users" ("id");
-
-ALTER TABLE "Attachments" ADD FOREIGN KEY ("task_id") REFERENCES "Tasks" ("id");

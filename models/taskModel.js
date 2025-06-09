@@ -42,3 +42,14 @@ exports.deleteTask = async (id) => {
   const result = await pool.query(query, values);
   return result.rows[0];
 };
+
+exports.updateTaskState = async (id, state_id) => {
+  const query = `
+    UPDATE "Tasks"
+    SET state_id = $1
+    WHERE id = $2
+    RETURNING *`;
+  const values = [state_id, id];
+  const result = await pool.query(query, values);
+  return result.rows[0];
+};

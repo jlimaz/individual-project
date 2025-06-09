@@ -3,26 +3,52 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title><%= pageTitle %></title>  
-  <style>
-    <%- include('../css/style.css'); %>
-  </style>
+  <title><%= pageTitle %></title> 
+  <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
-  <!-- Inclui o cabeçalho como um partial -->
-  <%- include('../components/header') %>
+  <!-- Desktop Sidebar -->
+  <div class="sidebar-desktop">
+    <%- include('../components/sidebar', { activePage: activePage }) %>
+  </div>
 
-  <main>
-    <!-- Renderiza o conteúdo da página específica -->
-    <%- include(content) %>
-  </main>
-
-  <footer>
-    <!-- Rodapé comum aqui -->
-    <p>footer</p>
-  </footer>
-
-  <!-- Adicione scripts JS se necessário -->
+  <!-- Main Content -->
+  <div class="main-content">
+    <%- include('../components/header') %>
+    <main class="page-content">
+      <%- include(content) %>
+    </main>
+  </div>
   
+  <style>
+    @media (min-width: 769px) {
+      .sidebar-desktop { 
+        position: fixed; 
+        left: 0; 
+        top: 0; 
+        width: 280px; 
+        height: 100vh; 
+      }
+      .main-content { 
+        margin-left: 240px; 
+      }
+      .page-content {
+        padding-left: 4rem;
+        padding-right: 4rem;
+        padding-top: 2rem;
+      }
+
+    }
+
+    @media (max-width: 768px) {
+      .sidebar-desktop { 
+        display: none; 
+      }
+      .page-content {
+        padding: 1rem;
+        padding-bottom: calc(80px + 1rem);
+      }
+    }
+  </style>
 </body>
 </html>

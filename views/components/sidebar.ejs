@@ -1,0 +1,16 @@
+<link rel="stylesheet" href="/css/sidebar.css">
+
+<div class="sidebar">
+  <div class="sidebar-logo">
+    <img src="/assets/logo.svg" alt="IPT Logo" class="logo">
+  </div>
+  <nav class="sidebar-nav">
+    <a href="/" class="nav-item <%= activePage === 'home' ? 'active' : '' %>">
+      <img src="/assets/icon-home.svg" alt="Dashboard Icon" class="nav-icon">
+      <span>Home</span>
+    <a href="/config" class="nav-item <%= activePage === 'config' ? 'active' : '' %>">
+      <img src="/assets/icon-settings.svg" alt="Settings Icon" class="nav-icon">
+      <span>Configurações</span>
+    </a>
+  </nav>
+</div>

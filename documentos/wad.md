@@ -74,7 +74,7 @@ O Tasky oferece a Carolina um sistema centralizado onde ela pode gerenciar todos
 
 ## <a name="c3"></a>3. Projeto da Aplicação Web
 
-### 3.1. Modelagem do banco de dados  (Semana 3)
+### 3.1. Modelagem do banco de dados
 
 <div align="center">
 <sub>FIGURA 2 - Modelagem Database </sub>
@@ -319,11 +319,63 @@ Esse modelo permite gerenciar tarefas com múltiplos usuários, categorização,
 
 ### 3.4. Guia de estilos (Semana 05)
 
-*Conteúdo a ser preenchido na Semana 5*
+O guia de estilos do Tasky foi desenvolvido para garantir uma identidade visual consistente e moderna em toda a aplicação, facilitando a usabilidade e promovendo uma experiência agradável ao usuário. Os principais elementos definidos incluem a paleta de cores, espaçamentos, tipografia e componentes visuais.
+
+#### Paleta de Cores
+
+A paleta de cores foi escolhida para transmitir profissionalismo, clareza e foco. Tons de azul e cinza predominam, proporcionando contraste adequado e facilitando a leitura das informações. As cores principais são utilizadas para destacar ações importantes, estados de tarefas e elementos interativos.
+
+<div align="center">
+  <img src="/assets/colors.jpg" alt="Guia de Cores Tasky">
+  <br>
+  <sub>FIGURA 7 - Paleta de cores do sistema Tasky</sub>
+</div>
+
+#### Espaçamento
+
+O sistema de espaçamento foi definido para garantir harmonia e organização entre os elementos da interface. Margens e paddings seguem uma escala modular, facilitando a manutenção do layout e a responsividade em diferentes dispositivos.
+
+<div align="center">
+  <img src="/assets/spacing.jpg" alt="Guia de Espaçamento Tasky">
+  <br>
+  <sub>FIGURA 8 - Guia de espaçamento do sistema Tasky</sub>
+</div>
+
+#### Tipografia
+
+A tipografia utilizada é limpa e moderna, priorizando a legibilidade. Títulos, subtítulos e textos seguem uma hierarquia clara, com tamanhos e pesos bem definidos para facilitar a navegação e o entendimento das informações.
+
+#### Componentes Visuais
+
+Botões, campos de formulário, cartões de tarefa e outros componentes seguem o padrão visual estabelecido, com cantos arredondados, sombras suaves e feedback visual em interações. O uso consistente desses elementos contribui para a identidade do Tasky e para a experiência do usuário.
+
+O guia de estilos serve como referência para todo o desenvolvimento front-end, garantindo que novas telas e funcionalidades mantenham a coerência visual e a qualidade da interface.
 
 ### 3.5. Protótipo de alta fidelidade (Semana 05)
 
-*Conteúdo a ser preenchido na Semana 5*
+Nesta etapa do projeto, foram desenvolvidos protótipos de alta fidelidade para as principais telas do sistema Tasky, utilizando ferramentas de design digital para simular a experiência real do usuário. Os protótipos foram criados com base nos requisitos levantados nas etapas anteriores e refletem a identidade visual, a navegação e as funcionalidades essenciais da aplicação.
+
+#### Tela de Login
+
+<div align="center">
+  <img src="/assets/login-prototype.png" alt="Protótipo de alta fidelidade - Login">
+  <br>
+  <sub>FIGURA 5 - Protótipo de alta fidelidade: Tela de Login</sub>
+</div>
+
+A tela de login apresenta uma interface limpa e objetiva, com destaque para o campo de autenticação do usuário. O layout prioriza a usabilidade, facilitando o acesso rápido ao sistema. Elementos visuais como o logo do Tasky e a paleta de cores institucional reforçam a identidade da aplicação.
+
+#### Tela de Dashboard (Kanban)
+
+<div align="center">
+  <img src="/assets/dashboard-prototype.png" alt="Protótipo de alta fidelidade - Dashboard">
+  <br>
+  <sub>FIGURA 6 - Protótipo de alta fidelidade: Dashboard Kanban</sub>
+</div>
+
+O dashboard foi projetado para oferecer uma visão clara e organizada das tarefas do usuário, utilizando o formato Kanban. Cada coluna representa um estado da tarefa (A Fazer, Fazendo, Feito), permitindo o gerenciamento visual e intuitivo do fluxo de trabalho. Os cartões de tarefa exibem informações essenciais como título, prioridade e categoria, além de permitir ações rápidas como mover entre colunas. O design busca equilibrar simplicidade e eficiência, proporcionando uma experiência agradável e produtiva.
+
+Esses protótipos serviram como referência visual para o desenvolvimento front-end, garantindo alinhamento entre o design proposto e a implementação final do sistema.
 
 ### 3.6. WebAPI e endpoints (Semana 05)
 
@@ -358,20 +410,27 @@ Esse modelo permite gerenciar tarefas com múltiplos usuários, categorização,
 
 ### 3.7 Interface e Navegação (Semana 07)
 
-*Conteúdo a ser preenchido na Semana 7*
+A interface do Tasky foi cuidadosamente projetada para proporcionar uma experiência intuitiva, moderna e eficiente ao usuário. O sistema adota uma navegação clara, com elementos visuais bem definidos e acessíveis, facilitando o gerenciamento de tarefas e a localização das principais funcionalidades.
 
----
+#### Estrutura de Navegação
 
-## <a name="c4"></a>4. Desenvolvimento da Aplicação Web (Semana 8)
+O Tasky utiliza uma barra lateral fixa (sidebar) que permanece visível em todas as telas principais da aplicação. Nela, o usuário encontra atalhos para as áreas essenciais, como o Dashboard (Home) e as Configurações. Os ícones e rótulos facilitam a identificação rápida de cada seção, tornando a navegação mais fluida e reduzindo o tempo para encontrar funcionalidades importantes.
 
-### 4.1 Demonstração do Sistema Web (Semana 8)
+#### Fluxo do Usuário
 
-*Conteúdo a ser preenchido na Semana 8*
+1. **Login:** O acesso ao sistema se inicia pela tela de login, que apresenta um layout limpo e objetivo, focado na autenticação do usuário.
+2. **Dashboard Kanban:** Após o login, o usuário é direcionado ao dashboard principal, onde visualiza suas tarefas organizadas em colunas Kanban (A Fazer, Fazendo, Feito). Cada cartão de tarefa pode ser arrastado entre as colunas, permitindo o gerenciamento visual do progresso.
+3. **Criação e Edição de Tarefas:** O botão "Nova Tasky" está sempre em destaque no dashboard, facilitando a criação de novas tarefas. Ao clicar, o usuário acessa um formulário simples e direto para cadastrar uma nova tarefa.
+4. **Configurações:** Através do menu lateral, o usuário pode acessar a área de configurações para ajustar preferências do sistema e dados pessoais.
 
-### 4.2 Conclusões e Trabalhos Futuros (Semana 8)
+#### Usabilidade e Responsividade
 
-*Conteúdo a ser preenchido na Semana 8*
+A interface foi desenvolvida com foco em responsividade, adaptando-se a diferentes tamanhos de tela, desde desktops até dispositivos móveis. Os componentes se reorganizam automaticamente para garantir boa usabilidade em qualquer contexto. Elementos interativos, como botões e cartões, possuem feedback visual para reforçar as ações do usuário.
 
-## <a name="c5"></a>5. Referências
+#### Exemplos Visuais
 
-*Referências a serem adicionadas conforme o desenvolvimento do projeto*
+- **Sidebar:** Disponível em todas as páginas principais, com ícones e textos para facilitar a navegação.
+- **Dashboard Kanban:** Colunas bem definidas, cartões de tarefa com informações essenciais e possibilidade de movimentação via drag-and-drop.
+- **Botão de Nova Tasky:** Sempre visível e de fácil acesso, incentivando a criação contínua de tarefas.
+
+A navegação clara e a interface amigável do Tasky contribuem para uma experiência eficiente, tornando o gerenciamento de tarefas mais produtivo e agradável para o usuário.

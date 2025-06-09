@@ -1,0 +1,9 @@
+<div class="card">
+  <h6><%= title %></h6>
+  <p class="small text-muted mt-2"><%= description %></p>
+  <div class="flex gap-2 mt-4 flex-wrap">
+    <% tags.forEach(tag => { %>
+      <span class="bg-secondary text-white rounded px-2 py-1 extra-small"><%= tag %></span>
+    <% }) %>
+  </div>
+</div>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Tasky</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/login.css">
+</head>
+
+<body>
+  <div class="login-container">
+    <div class="login-left">
+      <div class="login-form">
+        <!-- Welcome Section -->
+        <div class="welcome-section">
+          <h2>Bem-vindo de volta</h2>
+          <p style="text-align: left;">Acesse sua conta para continuar</p>
+        </div>
+
+        <!-- Error Message -->
+        <div id="errorMsg" class="error-message">
+          Erro: Credenciais inválidas
+        </div>
+
+        <!-- Login Form -->
+        <form action="/login" method="POST" autocomplete="off">
+          <div class="form-group">
+            <input type="email" name="email" id="email" required placeholder="Email" class="input">
+          </div>
+
+          <div class="form-group">
+            <input type="password" name="password" id="passwordField" required placeholder="Senha" class="input"
+              autocomplete="off">
+          </div>
+
+          <button type="submit" class="button-primary">Entrar</button>
+        </form>
+
+        <!-- Google Login Button -->
+        <button type="button" class="button-google">Entrar com Google</button>
+
+        <!-- Signup Link -->
+        <div class="signup-link">
+          Primeira acesso à plataforma? <a href="#" id="createAccountLink">Criar senha</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="login-right">
+      <!-- Background image or illustration would go here -->
+    </div>
+  </div>
+
+  <script>
+    // Verifica se há um erro na URL e exibe a mensagem de erro
+    window.onload = function () {
+      if (window.location.search.includes('error=1')) {
+        document.getElementById('errorMsg').style.display = 'block';
+        document.getElementById('passwordField').value = '';
+        window.history.replaceState({}, document.title, "/login");
+      }
+    };
+
+    // Mobile tab functionality (for demonstration)
+    document.querySelectorAll('.tab-button').forEach(button => {
+      button.addEventListener('click', function () {
+        document.querySelectorAll('.tab-button').forEach(btn => btn.classList.remove('active'));
+        this.classList.add('active');
+      });
+    });
+
+    // Create account link functionality (placeholder)
+    document.getElementById('createAccountLink').addEventListener('click', function (e) {
+      e.preventDefault();
+      // Add your create account logic here
+      console.log('Navigate to create account page');
+    });
+  </script>
+</body>
+
+</html>
